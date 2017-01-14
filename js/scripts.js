@@ -20,6 +20,17 @@ $(document).ready(function() {
       $("#hidejava").show();
     }
 
+    if (apps === "Web") {
+      $("#hidejavascript").show();
+      $("#hideruby").show();
+      $("#hidephp").show();
+      $("#hidedesign").show();
+    }
+
+    if (apps === "Desktop") {
+      $("#hidejavascript").show();
+    }
+
     if (truthvbeauty === "Logic") {
       $("#hidedesign").hide();
       $("#hidecss").hide();
@@ -35,9 +46,7 @@ $(document).ready(function() {
       $("#hidecss").show();
     }
 
-    if (apps === "Web") {
-      $("#hidejavascript").show();
-    }
+
 
 
     event.preventDefault();
