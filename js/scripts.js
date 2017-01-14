@@ -26,7 +26,6 @@ $(document).ready(function() {
       $("#hidephp").show();
       $("#hidedesign").show();
     }
-
     if (apps === "Desktop") {
       $("#hidejavascript").show();
     }
@@ -46,8 +45,23 @@ $(document).ready(function() {
       $("#hidecss").show();
     }
 
+    if (frontorback === "Front-end developement - I want to create an experience the user will enjoy and remember.") {
+      $("#hidec").hide();
+      $("#hidejava").hide();
+      $("#hidephp").hide();
+      $("#hideruby").hide();
+      $("#hidecss").show();
+      $("#hidedesign").show();
+    }
 
-
+    if (frontorback === "Back-end developement - Let's see whats going on under the hood.") {
+      $("#hidecss").hide();
+      $("#hidedesign").hide();
+      $("#hidec").show();
+      $("#hidejava").show();
+      $("#hidephp").show();
+      $("#hideruby").show();
+    }
 
     event.preventDefault();
   });
