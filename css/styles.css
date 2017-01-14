@@ -1,27 +1,27 @@
-#ruby {
-  display: none;
-} 
-
-#php {
+#hideruby {
   display: none;
 }
 
-#java {
+#hidephp {
   display: none;
 }
 
-#c {
+#hidejava {
   display: none;
 }
 
-#javascript {
+#hidec {
   display: none;
 }
 
-#css {
+#hidejavascript {
   display: none;
 }
 
-#design {
+#hidecss {
+  display: none;
+}
+
+#hidedesign {
   display: none;
 }

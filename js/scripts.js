@@ -1,31 +1,34 @@
 $(document).ready(function() {
-  var environment = $("#environment").val();
-  var apps = $("#apps").val();
-  var websites = $("#websites").val();
-  var truthvbeauty = $("#truthvbeauty").val();
-  var frontorback = $("#frontorback").val();
+  $("form").submit(function(event) {
 
-  if (environment === "Startup - I don't mind taking a risk on an exiting new venture.") {
-    $("#ruby").show();
-    $("#php").show();
-    $("#java").show();
-  }
+    var environment = $("#environment").val();
+    var apps = $("#apps").val();
+    var websites = $("#websites").val();
+    var truthvbeauty = $("#truthvbeauty").val();
+    var frontorback = $("#frontorback").val();
 
-  if (environment === "Large and established - I want security and a clear path for advancment.") {
-    $("#c").show();
-    $("#php").show();
-    $("#java").show();
-  }
+    if (environment === "Startup - I don't mind taking a risk on an exiting new venture.") {
+      $("#hideruby").show();
+      $("#hidephp").show();
+      $("#hidejava").show();
+    }
 
-  if (truthvbeauty === "Logic") {
-    $("#c").show();
-    $("#ruby").show();
-    $("#php").show();
-  }
+    if (environment === "large") {
+      $("#hidec").show();
+      $("#hidephp").show();
+      $("#hidejava").show();
+    }
 
-  if (truthvbeauty === "Aesthetics") {
-    $("#design").show();
-    $("#css").show();
-  }
+    if (truthvbeauty === "Logic") {
+      $("#hidec").show();
+      $("#hideruby").show();
+      $("#hidephp").show();
+    }
 
+    if (truthvbeauty === "Aesthetics") {
+      $("#hidedesign").show();
+      $("#hidecss").show();
+    }
+    event.preventDefault();
+  });
 });
